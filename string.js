@@ -32,5 +32,5 @@ let obj =
 let output = `The cost of the ${obj.item} is ${obj.price} rupees `;
 
 //escape character is
-\n // for the next line   //if we write it between the string that it is count as a single character even though there are two characters that are \ and n
-\t //for the tab space
+//  \n // for the next line   //if we write it between the string that it is count as a single character even though there are two characters that are \ and n
+//  \t //for the tab space
