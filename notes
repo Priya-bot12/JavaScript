@@ -1,0 +1,90 @@
+1. we can see the html of any file in the inspect->elements
+2. we also get the css in the inspect-> under the elements
+3. we can see the javascript in the console
+4. Window Object -> the window object represents an open window in a browser. it is browser,s object(not javascript)
+   and automatically created ny the browser
+   It is a global object with lots of properties and methods
+
+   for eg. if we write window.alert("Hello") // it is also right coz alert is the part of window but we do not need to write it again and again
+   as it is self understandable by browser
+
+5. DOM -> Document Object Model 
+    console.log -> print
+    console.dir -> document->properties
+     When a page is loaded, The browser creates a Documenet Object Model(DOM) of the page
+
+     We can access the Html of the page using the java script also 
+     Inspect->console->Window (The window has so many objects and one of them is Document which contains all the html of the page)
+
+     access of HTML using javascript
+     window.Document
+     console.dir(window.Documenet)    //to print the object we use console.dir
+     we can also access the individual part like
+     console.dir(document.body)
+
+6. WHY DOM IS USED??
+  when we want to do some changes in the website dynamically after the input or action from the user in that casse we use DOM
+  and it is called DOM Manipulation
+
+  DOM Manipulation
+
+  selecting with id
+  document.getElementById("myID") //id is represented by #id and it is unique
+
+  selecting with class
+  document.getElementsByClassName("myClass") // represented by .className // it returns the HTML collection which is similar to the Array and have properties like length
+
+  selecting with tagName
+  document.getElementsByTagName("p")  // it also return the HTML collection
+
+  using QuerySelector 
+
+  querySelector only retun the first element that matches to the it
+  
+  ~ document.querySelector("myId/myClass/tag") //returns the first elements
+  we can pass anything tag/id/class in it 
+  if want to pass the id -> #id
+  if want to pass the class -> .class
+
+  ~document.querySelectorAll("myId/myClass/tag") //returns all the elemnts matching to that tag
+  in this also we can pass anything
+  it returns the Nodelist of the elements
+  we can access them using index for example divs[1]
+
+
+  Properties of DOM -> we can set or get the properties of elements
+
+
+  1. tagName : returns tag for the element Node
+  2. innerText : returns the text content of the element and all its Children
+  3. innerHTML : returns the plain text or HTML contents in the element
+  4. textContent : returns textual content even for the hidden elements
+
+
+  DOM Manipulation -> Attributes
+
+  Attributes are the different properties given to the tags
+  for example id , class , src(link in image )
+
+  now we can set and get these Attributes
+  ~getAttribute(attr) //to get the Attributes
+  ~setAttributes(attr,value) //to set the attribute value
+
+  ~ node.style -> we can access all the styling of that element
+
+
+  Insert elements
+
+  1. CREATE THE ELEMENT 
+  2. ADD THE ELEMENT
+
+  // let el = document.createElement("div")
+  
+  Insert elements
+  ~ node.append(el)   //adds at the end of the node(inside)
+  ~ node.prepend(el) //adds at the start of the node (inside)
+  ~ node.before(el) //adds before the node (outside)
+  ~ node.after(el) //adds after the node (outside)
+
+  Delete the element
+  ~ node.remove() //remove the node
