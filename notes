@@ -88,3 +88,76 @@
 
   Delete the element
   ~ node.remove() //remove the node
+
+
+EVENTS
+
+The change in the state of an object is known as an event
+Events are fired to notify code of interesting changes that may affect the code execution
+
+~Mouse events ( click, double click etc)
+~Keyboard events ( keypress, keyup, keydown)
+~Form events(submit etc)
+~print event and many more
+
+example there are attributes 
+~onclick
+~ondbclick
+~mouseover
+
+
+1. if we have write the event handling  in the inline html file and also in javascript then the preference will be given to javascript evenHandlind
+
+2. if there are more than two function handling the second one than the most recent one overwrite the previous one
+
+EVENT OBJECT
+
+it is a special object that has details about the event.
+All the event handlers have access to the Event Object properties and methods
+
+node.event=(e) =>
+{
+   //handle here
+}
+
+
+examples
+~ e.target -> where wwas the even occur
+~ e.type -> tell what type of the event it was
+~ e.clientX -> horizantal X position where event was occur
+~ e.clientY -> vertical Y position where the event was occur
+
+
+
+Drawback of above two type of handling the event is that 
+1. inline event made the code bulky
+2. seperately in javascript we can not handle more than on event on the same action as event overwrite
+
+so we have the 3rd type of event handling and that is through Event Listners
+
+EVENT LISTNERS
+
+we can make multiple events occuring for the same action and oaal of them get triggered for that particular action
+
+node.addEventListner(event for eg. "click" , callabck);
+
+node.removeEventListner(event , callback )   
+now one imp. point for the above is that for example if we make two functions for the same event one is add and then another is remove than it will not works as we desire to remove because they are store seperately in the memory and getting executed seperately.
+
+so note : the call back reference should be same to remove
+
+~toggle button => when it switch between two states
+
+css in javascript
+.style.backgroudColor("dark);
+
+css throught css file in javascript
+.classList.add("dark")
+//dark is stying in css like .class{
+   //css code
+}
+
+
+
+
+
