@@ -158,6 +158,44 @@ css throught css file in javascript
 }
 
 
+//CLASSESS and OBJECTS IN JAVASCRIPT
+
+Prototypes in javaScript
+
+A javascipt objecct is an entity having sate and behaviour (properties and methods)
+
+JS object have a special property called prototype , it is by defualt property of each object which contains different methods and behaviour
+We can set prototype using  __proto__
+Prototype itslef an object, inside an object which contain spection properties and methods
+we can also make our own prototypes
+the typeof object is mainly the reference to an object which can be null also
+
+note: if object and the prototype have same method, object method will be used
+
+-> the typeof array internally in javascript is object not array
+so array object also contain the prototype object whole all methods are inherited in array 
+for example we can use array.push();
+
+When we have to crate the objects with the simlar information we create them using classes
+classes give us the blueprint or the template for creating objects
+
+Constructor
+-> automatically invoked by new keyword
+-> initialize the object
+
+Inheritance
+-> inheritance is passing down properties and methods fromn parent class to child class.
+-> if parent class and the child class have the same function than the method of child class will be executed and this is called method overriding.
+
+SUPER Keyword
+The super Kreyword is used to call the constructor of its parent class to access the parents properties and methods
+super(args) //calls Parent Constructor
+super.parentMethod(args);
+
+-> If we make a constructor in the child class than it is compulsory for the child class constructor to call the parent class contructor before using the this keyword in the child class constructor and exiting the child class constructor.
+-> If we want to pass on the some important information to the parent constructor through the child constructor than we use the super keyword
+
+
 
 
 
