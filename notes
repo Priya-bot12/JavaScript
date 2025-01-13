@@ -255,3 +255,37 @@ An IIFE (Immediately invoked function expression) is a javascript function that 
 
 })();
 
+
+API - Application Programming Interface
+
+fetch API provides an interface for fetching (sending/receiving) resourses.
+
+it uses Request and Response objects.
+
+The fetch() method is used to fetch a resourse(data).
+
+let promise = fetch(url,[options]);
+//here fetch return a promise
+//status: 200 means request successful
+
+-> when we do not write any option it by default takes the getRequest
+->the reposne we are getting is in different format as of when brwoser is sending the same request and also it is not in readable form 
+-> So to undersatand this we need to undersatn some common terms which are as follows
+
+UNDERSTANDING SOME TERMS
+
+1. AJAX is asynchronous JavaScript and XML
+->Earlier when there was no modern JavaScript data used to come in the XML data format but now it comes in json format. so we can call the APIs AJAJ asynchronous JavaScript and JSON , but this term is not very popular so eventhough we have JSON instead of XML we still use the term AJAX.
+2. JSON is JavaScript Object Notation
+3. json() method: return the second promise that resolves with the result of parsing the response body text as JSON. (Input Is JSON , output is JavaScript object)
+json() method actually return the javaScript object and is used to convert the JSON -> javaScript Object , which is a usable data
+
+//HTTP verbs - GET,PUT,DELETE
+//HTTP response codes 
+1. client error response(400 - 499)
+2. server error response(500 - 599)
+
+*HTTP response headers also contain details about the responses, such as content type, HTTP status code etc -- they contain some additonal information
+
+
+
