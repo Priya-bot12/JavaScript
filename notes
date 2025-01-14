@@ -2,7 +2,7 @@
 2. we also get the css in the inspect-> under the elements
 3. we can see the javascript in the console
 4. Window Object -> the window object represents an open window in a browser. it is browser,s object(not javascript)
-   and automatically created ny the browser
+   and automatically created by the browser
    It is a global object with lots of properties and methods
 
    for eg. if we write window.alert("Hello") // it is also right coz alert is the part of window but we do not need to write it again and again
@@ -106,7 +106,7 @@ example there are attributes
 ~mouseover
 
 
-1. if we have write the event handling  in the inline html file and also in javascript then the preference will be given to javascript evenHandlind
+1. if we have write the event handling  in the inline html file and also in javascript then the preference will be given to javascript evenHandling
 
 2. if there are more than two function handling the second one than the most recent one overwrite the previous one
 
@@ -137,7 +137,7 @@ so we have the 3rd type of event handling and that is through Event Listners
 
 EVENT LISTNERS
 
-we can make multiple events occuring for the same action and oaal of them get triggered for that particular action
+we can make multiple events occuring for the same action and all of them get triggered for that particular action
 
 node.addEventListner(event for eg. "click" , callabck);
 
@@ -176,7 +176,7 @@ note: if object and the prototype have same method, object method will be used
 so array object also contain the prototype object whole all methods are inherited in array 
 for example we can use array.push();
 
-When we have to crate the objects with the simlar information we create them using classes
+When we have to creat the objects with the simliar information we create them using classes
 classes give us the blueprint or the template for creating objects
 
 Constructor
@@ -270,7 +270,7 @@ let promise = fetch(url,[options]);
 
 -> when we do not write any option it by default takes the getRequest
 ->the reposne we are getting is in different format as of when brwoser is sending the same request and also it is not in readable form 
--> So to undersatand this we need to undersatn some common terms which are as follows
+-> So to undersatand this we need to undersatd some common terms which are as follows
 
 UNDERSTANDING SOME TERMS
 
